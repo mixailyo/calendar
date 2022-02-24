@@ -1,6 +1,109 @@
 .footer {
-  min-height: 100px;
-  padding: 0 60px;
+  background-color: $color-nero;
+  color: $color-default-white;
+  @include adaptiveDesktopToMobile('padding-top', 90, 60);
+  @include adaptiveDesktopToMobile('padding-bottom', 50, 30);
+}
+.container {
+}
+.footer__wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  @include adaptiveDesktopToMobile('gap', 80, 40);
 
-  background-color: $color-blue;
+  @include viewport--767 {
+    grid-template-columns: auto;
+  }
+}
+.footer__text {
+  @include viewport--767 {
+    order: 1;
+  }
+}
+.footer__title {
+  font-weight: 500;
+  @include adaptiveDesktopToMobile('font-size', 36, 28);
+  line-height: 119%;
+  max-width: 370px;
+}
+.footer__description {
+  @include adaptiveDesktopToMobile('margin-top', 30, 15);
+  opacity: 0.5;
+  max-width: 358px;
+}
+.footer__apps {
+  grid-column: span 2;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  width: fit-content;
+  height: fit-content;
+
+  @include viewport--767 {
+    grid-column: auto;
+    grid-template-columns: auto;
+    margin: 0 auto;
+    order: 2;
+  }
+}
+.footer__app {
+}
+.footer__app-pic {
+}
+.footer__logo-wrapper {
+  display: flex;
+  align-items: center;
+
+  @include viewport--767 {
+    order: 4;
+    margin: 0 auto;
+  }
+}
+.footer__logo-link {
+}
+.footer__logo {
+  &--mail {
+    @include adaptiveDesktopToMobile('margin-right', 15, 10);
+  }
+  &--vk-project {
+  }
+}
+.footer__socials {
+  display: flex;
+  margin: 0 -6px;
+
+  @include viewport--767 {
+    order: 3;
+    justify-content: space-between;
+  }
+}
+.footer__social {
+  margin: 0 6px;
+  transition: filter 0.3s ease-out;
+
+  &:hover {
+    filter: invert(1);
+  }
+
+  @include viewport--767 {
+    margin: 0;
+  }
+}
+.footer__social-logo {
+  @include viewport--767 {
+    width: 41px;
+    height: 41px;
+  }
+}
+.footer__copyright {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  opacity: 0.5;
+
+  @include viewport--767 {
+    order: 5;
+    margin: 0 auto;
+    margin-top: -25px;
+  }
 }

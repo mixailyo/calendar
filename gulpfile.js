@@ -137,7 +137,7 @@ const clean = () => {
 
 const start = gulp.series(clean, svgo, copy, css, sprite, js, html, syncServer);
 
-const build = gulp.series(clean, svgo, copy, css, sprite, js, html, optimizeImages);
+const build = gulp.series(clean, svgo, copy, css, sprite, js, html);
 
 // Optional tasks
 //---------------------------------
@@ -155,16 +155,16 @@ const createWebp = () => {
     .pipe(gulp.dest(`source/img/${root}`));
 };
 
-const optimizeImages = () => {
-  return gulp.src('build/img/**/*.{png,jpg}')
-      .pipe(imagemin([
-        imagemin.optipng({optimizationLevel: 3}),
-        imagemin.mozjpeg({quality: 75, progressive: true}),
-      ]))
-      .pipe(gulp.dest('build/img'));
-};
+// const optimizeImages = () => {
+//   return gulp.src('build/img/**/*.{png,jpg}')
+//       .pipe(imagemin([
+//         imagemin.optipng({optimizationLevel: 3}),
+//         imagemin.mozjpeg({quality: 75, progressive: true}),
+//       ]))
+//       .pipe(gulp.dest('build/img'));
+// };
 
 exports.build = build;
 exports.start = start;
 exports.webp = createWebp;
-exports.imagemin = optimizeImages;
+// exports.imagemin = optimizeImages;

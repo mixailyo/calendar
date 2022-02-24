@@ -1,0 +1,28 @@
+.container {
+  width: 100%;
+  max-width: 1124px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.btn {
+  width: 250px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $color-blue;
+  border-radius: 16.5517px;
+  font-weight: 500;
+  font-size: 21px;
+  color: $color-default-white;
+  transition: box-shadow 0.3s linear;
+
+  &:hover {
+    box-shadow: 0px 15px 50px rgba(0, 95, 249, 0.5);
+  }
+
+  @include viewport--767 {
+    width: 100%;
+  }
+}

@@ -1,0 +1,64 @@
+.banner {
+  @include adaptiveDesktopToMobile('margin-top', 150, 90);
+}
+.banner__wrapper {
+  background-image: url('../img/bg/banner-bg.png');
+  background-size: cover;
+  background-position-x: right;
+  background-repeat: no-repeat;
+  border-radius: 34px;
+  @include adaptiveDesktopToMobile('padding', 60, 30);
+  overflow: hidden;
+  min-height: 320px;
+
+  @include viewport--767 {
+    background-image: url('../img/bg/banner-bg-mobile.png');
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    min-height: 400px;
+  }
+}
+.banner__top-wrapper {
+  display: flex;
+  align-items: flex-start;
+
+  @include viewport--767 {
+    flex-direction: column;
+    margin-top: auto;
+  }
+}
+.banner__logo {
+  @include viewport--767 {
+    width: 50px;
+    height: 50px;
+  }
+}
+.banner__title {
+  @include adaptiveDesktopToMobile('margin-left', 30, 0);
+  @include adaptiveDesktopToMobile('font-size', 30, 24);
+  line-height: 110%;
+  max-width: 270px;
+
+  @include viewport--767 {
+    margin: 20px 0 0 0;
+    max-width: 210px;
+  }
+}
+.banner__links-list {
+  @include reset-list;
+  display: flex;
+  margin: 0 -8px;
+  margin-top: 64px;
+
+  @include viewport--1023 {
+    display: none;
+  }
+}
+.banner__links-list-item {
+  margin: 0 8px;
+}
+.banner__link {
+}
+.banner__link-pic {
+}

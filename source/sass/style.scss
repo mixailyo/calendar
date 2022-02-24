@@ -2,7 +2,7 @@
 //---------------------------------
 
 @import "vendor/normalize";
-// @import "vendor/swiper";
+@import "vendor/swiper";
 
 // Global
 //---------------------------------
@@ -11,16 +11,17 @@
 @import "mixins";
 @import "global/fonts";
 @import "global/reboot";
-@import "global/utils";
-@import "global/container";
+@import "global/common";
+@import "global/animations";
 
 // Blocks
 //---------------------------------
 
 @import "blocks/header";
 @import "blocks/footer";
-@import "blocks/modal";
-
+@import "blocks/functions";
+@import "blocks/banner";
+@import "blocks/abilities";
 
 // используйте это для отключения ховеров на тач устройствах
 // ! но не используйте это для текстовых полей ( input, textarea )

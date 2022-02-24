@@ -1,0 +1,102 @@
+.scroll-item {
+  &.function__text {
+    .function__title,
+    .function__description,
+    .function__more {
+      transform: translateY(40px);
+      opacity: 0;
+      transition-property: transform, opacity;
+      transition-timing-function: ease-in-out;
+      transition-duration: 0.6s;
+    }
+
+    .function__description {
+      transition-delay: 0.15s;
+    }
+
+    .function__more {
+      transition-delay: 0.3s;
+    }
+
+    &.is-active {
+      .function__title,
+      .function__more {
+        transform: translateY(0px);
+        opacity: 1;
+      }
+      .function__description {
+        transform: translateY(0px);
+        opacity: 0.6;
+      }
+    }
+  }
+  
+  &.banner {
+    transform: translateY(40px);
+    opacity: 0;
+    transition-property: transform, opacity;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.6s;
+
+    .banner__top-wrapper {
+      transform: translateY(40px);
+      opacity: 0;
+      transition-property: transform, opacity;
+      transition-timing-function: ease-in-out;
+      transition-duration: 0.6s;
+      transition-delay: 0.15s;
+    }
+
+    &.is-active {
+      transform: translateY(0px);
+      opacity: 1;
+
+      .banner__top-wrapper {
+        transform: translateY(0px);
+        opacity: 1;
+      }
+    }
+  }
+
+  &.abilities__slider {
+    .swiper-slide {
+      opacity: 0;
+      transition-property: opacity;
+      transition-timing-function: ease-in-out;
+      transition-duration: 0.6s;
+    }
+
+    @for $i from 1 to 50 {
+      .swiper-slide:nth-child(#{$i}) {
+        transition-delay: #{($i / 10) - 1.1}s;
+      }
+    }
+
+    &.is-active {
+      .swiper-slide {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.scroll-item-end {
+  &.header {
+    .header__title,
+    .header__description, 
+    .header__join-btn {
+      transition-property: transform, opacity;
+      transition-timing-function: ease-in-out;
+      transition-duration: 0.6s;
+    }
+
+    &.is-active {
+      .header__title,
+      .header__description, 
+      .header__join-btn {
+        transform: translateY(-40px);
+        opacity: 0;
+      }
+    }
+  }
+}

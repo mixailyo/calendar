@@ -1,28 +1,13 @@
-<header class="header @@if (context.mod) { header--@@mod }">
-  <div class="header__wrapper">
-    <a class="header__logo" @@if (!context.main) { href="main.html"} aria-label="Переход на главную">
-      Логотип
+<header class="header">
+  <div class="header__logo-wrapper">
+    <a href="https://x.calendar.mail.ru/?utm_source=calendar_lp&utm_medium=upper_logo&utm_campaign=calendar" target="_blank" class="header__logo-link">
+      <img src="img/svg/calendar-logo.svg" alt="@календарь" class="header__logo header__logo--calendar" width="212" height="36">
     </a>
-
-    <nav class="main-nav">
-      <button class="main-nav__toggle btn-reset" type="button" aria-label="Переключатель отображения меню" aria-pressed="false">
-        <svg width="20" height="20">
-          <use xlink:href="#icon-burger"></use>
-        </svg>
-      </button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link @@if (context.headerActiveLinkIndex === 0) { main-nav__link--active }" @@if (context.headerActiveLinkIndex !== 0) { href="#" }>Страница 1</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link @@if (context.headerActiveLinkIndex === 1) { main-nav__link--active }" @@if (context.headerActiveLinkIndex !== 1) { href="#" }>Страница 2</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link @@if (context.headerActiveLinkIndex === 2) { main-nav__link--active }" @@if (context.headerActiveLinkIndex !== 2) { href="#" }>Страница 3</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <a href="https://vk.com/ecosystem?utm_source=calendar_landing&utm_medium=upper_logo&utm_campaign=calendar" target="_blank" class="header__logo-link">
+      <img src="img/svg/vk-project-logo.svg" alt="проект VK" class="header__logo header__logo--vk-project" width="105" height="36">
+    </a>
   </div>
+  <h1 class="header__title">Простой и&nbsp;удобный календарь</h1>
+  <p class="header__description">Напомнит о&nbsp;ваших планах, подскажет, кого поздравить с&nbsp;днём рождения и&nbsp;когда лучше запланировать встречу</p>
+  <a href="http://x.calendar.mail.ru/?utm_source=calendar_lp&utm_medium=blue_upper_button&utm_campaign=calendar" target="_blank" class="header__join-btn btn" onclick='var _tmr = window._tmr || (window._tmr = []); _tmr.push({ type: "sendEvent", category: "button", action: "click", label: "enter1" }); return true;'>Попробовать</a>
 </header>
