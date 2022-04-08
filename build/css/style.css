@@ -1876,36 +1876,8 @@ a.header__join-btn {
   position: relative;
 }
 
-.function:nth-child(2)::before {
-  content: '';
-  height: 294px;
-  width: 488px;
-  position: absolute;
-  top: -110px;
-  right: -110px;
-  background-image: url("../img/svg/grid.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  z-index: -1;
-  pointer-events: none;
-}
-
 .function:nth-child(3) {
   position: relative;
-}
-
-.function:nth-child(3)::before {
-  content: '';
-  height: 294px;
-  width: 488px;
-  position: absolute;
-  top: -110px;
-  left: -110px;
-  background-image: url("../img/svg/grid.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  z-index: -1;
-  pointer-events: none;
 }
 
 .function:nth-child(even) {
@@ -1913,7 +1885,7 @@ a.header__join-btn {
   grid-template-columns: 1fr 1.26fr;
 }
 
-.function:nth-child(even) .function__video {
+.function:nth-child(even) .function__illustration {
   -webkit-box-ordinal-group: 3;
   -ms-flex-order: 2;
   order: 2;
@@ -1923,7 +1895,7 @@ a.header__join-btn {
   margin-left: 80px;
 }
 
-.function__video {
+.function__illustration {
   border-radius: 34px;
 }
 
@@ -2299,35 +2271,11 @@ a.header__join-btn {
     margin-bottom: calc(75px + 15 * ((100vw - 320px) / 1120));
   }
 
-  .function:nth-child(2)::before {
-    height: calc(157px + 137 * ((100vw - 320px) / 1120));
-  }
-
-  .function:nth-child(2)::before {
-    width: calc(260px + 228 * ((100vw - 320px) / 1120));
-  }
-
-  .function:nth-child(2)::before {
-    top: calc(-55px + -55 * ((100vw - 320px) / 1120));
-  }
-
-  .function:nth-child(3)::before {
-    height: calc(157px + 137 * ((100vw - 320px) / 1120));
-  }
-
-  .function:nth-child(3)::before {
-    width: calc(260px + 228 * ((100vw - 320px) / 1120));
-  }
-
-  .function:nth-child(3)::before {
-    top: calc(-55px + -55 * ((100vw - 320px) / 1120));
-  }
-
   .function:nth-child(even) .function__text {
     margin-left: calc(0px + 80 * ((100vw - 320px) / 1120));
   }
 
-  .function__video {
+  .function__illustration {
     border-radius: calc(16px + 18 * ((100vw - 320px) / 1120));
   }
 
@@ -2478,7 +2426,7 @@ a.header__join-btn {
     grid-template-columns: auto;
   }
 
-  .function:nth-child(even) .function__video {
+  .function:nth-child(even) .function__illustration {
     -webkit-box-ordinal-group: unset;
     -ms-flex-order: unset;
     order: unset;
