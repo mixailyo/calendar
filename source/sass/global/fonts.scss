@@ -1,49 +1,28 @@
 @font-face {
   font-family: 'Mail Sans Roman';
-  src: url('../fonts/MailSansRoman-DemiBold.woff2') format('woff2'),
-       url('../fonts/MailSansRoman-DemiBold.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Mail Sans Roman';
-  src: url('../fonts/MailSansRoman-Medium.woff2') format('woff2'),
-       url('../fonts/MailSansRoman-Medium.woff') format('woff');
+  src: url('https://img.imgsmail.ru/hb/e.mail.ru/static/fonts/MailSansRoman/WOFF2/MailSansRoman-Medium.woff2') format('woff2'),
+       url('https://img.imgsmail.ru/hb/e.mail.ru/static/fonts/MailSansRoman/WOFF2/MailSansRoman-Medium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: 'Mail Sans Roman';
-  src: url('../fonts/MailSansRoman-Regular.woff2') format('woff2'),
-       url('../fonts/MailSansRoman-Regular.woff') format('woff');
+  src: url('https://img.imgsmail.ru/hb/e.mail.ru/static/fonts/MailSansRoman/WOFF2/MailSansRoman-Regular.woff2') format('woff2'),
+       url('https://img.imgsmail.ru/hb/e.mail.ru/static/fonts/MailSansRoman/WOFF/MailSansRoman-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Mail Sans Roman';
-  src: url('../fonts/MailSansRoman-Light.woff2') format('woff2'),
-       url('../fonts/MailSansRoman-Light.woff') format('woff');
+  src: url('https://img.imgsmail.ru/hb/e.mail.ru/static/fonts/MailSansRoman/WOFF2/MailSansRoman-Light.woff2') format('woff2'),
+       url('https://img.imgsmail.ru/hb/e.mail.ru/static/fonts/MailSansRoman/WOFF/MailSansRoman-Light.woff') format('woff');
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
   font-family: 'Mail Sans Roman';
-  src: url('../fonts/MailSansRoman-Bold.woff2') format('woff2'),
-       url('../fonts/MailSansRoman-Bold.woff') format('woff');
+  src: url('https://img.imgsmail.ru/hb/e.mail.ru/static/fonts/MailSansRoman/WOFF2/MailSansRoman-Bold.woff2') format('woff2'),
+       url('https://img.imgsmail.ru/hb/e.mail.ru/static/fonts/MailSansRoman/WOFF/MailSansRoman-Bold.woff') format('woff');
   font-weight: 800;
   font-style: normal;
-}
-@font-face {
-  font-family: 'William Display';
-  src: url('../fonts/WilliamDisplayPro-Bld.woff2') format('woff2'),
-       url('../fonts/WilliamDisplayPro-Bld.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "icon_font";
-  src: url("../fonts/icon_font2.woff") format("woff2"),
-      url("../fonts/icon_font.woff") format("woff");
-  font-weight: normal;
-  font-style: normal
 }

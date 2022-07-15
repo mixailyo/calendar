@@ -1,5 +1,5 @@
 .banner {
-  @include adaptiveDesktopToMobile('margin-top', 150, 90);
+  
 }
 .banner__wrapper {
   background-image: url('../img/bg/banner-bg.png');
@@ -38,6 +38,7 @@
   @include adaptiveDesktopToMobile('margin-left', 30, 0);
   @include adaptiveDesktopToMobile('font-size', 30, 24);
   line-height: 110%;
+  font-weight: 500;
   max-width: 270px;
 
   @include viewport--767 {

@@ -10,7 +10,7 @@ const animations = () => {
           if (
             el.getBoundingClientRect().top < elementPosY ||
             el.getBoundingClientRect().top <
-              document.documentElement.clientHeight / 2
+              document.documentElement.clientHeight / 1.15
           ) {
             el.classList.add("is-active");
           }

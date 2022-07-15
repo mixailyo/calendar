@@ -1,7 +1,7 @@
 .footer {
   background-color: $color-nero;
   color: $color-default-white;
-  @include adaptiveDesktopToMobile('padding-top', 90, 60);
+  @include adaptiveDesktopToMobile('padding-top', 75, 60);
   @include adaptiveDesktopToMobile('padding-bottom', 50, 30);
 }
 .container {
@@ -22,7 +22,7 @@
 }
 .footer__title {
   font-weight: 500;
-  @include adaptiveDesktopToMobile('font-size', 36, 28);
+  @include adaptiveDesktopToMobile('font-size', 42, 28);
   line-height: 119%;
   max-width: 370px;
 }
@@ -30,6 +30,7 @@
   @include adaptiveDesktopToMobile('margin-top', 30, 15);
   opacity: 0.5;
   max-width: 358px;
+  @include adaptiveDesktopToMobile('font-size', 18, 16);
 }
 .footer__apps {
   grid-column: span 2;
@@ -74,15 +75,15 @@
 
   @include viewport--767 {
     order: 3;
-    justify-content: space-between;
+    justify-content: center;
   }
 }
 .footer__social {
   margin: 0 6px;
-  transition: filter 0.3s ease-out;
+  transition: opacity 0.2s cubic-bezier(0.12, 0, 0.39, 0);
 
   &:hover {
-    filter: invert(1);
+    opacity: 0.6;
   }
 
   @include viewport--767 {

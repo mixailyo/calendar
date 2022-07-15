@@ -2,6 +2,7 @@
   @include adaptiveDesktopToMobile('height', 675, 570);
   background-image: url("../img/bg/header-bg.png");
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
@@ -10,7 +11,12 @@
   padding: 0 30px;
   @include adaptiveDesktopToMobile('padding-top', 140, 80);
 
+  @include viewport--1439 {
+    background-size: auto 100%;
+  }
+
   @include viewport--767 {
+    background-size: cover;
     background-image: url("../img/bg/header-bg-mobile.png");
   }
 }
@@ -45,5 +51,6 @@
 a.header__join-btn {
   @include adaptiveDesktopToMobile('margin-top', 40, 34);
   width: fit-content;
-  padding: 20px 25px;
+  padding: 20px 19px;
+  font-weight: 400;
 }

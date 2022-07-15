@@ -1,4 +1,6 @@
 const abilitiesSlider = () => {
+  let ability = document.querySelectorAll('.ability'); 
+
   const swiper = new Swiper('.abilities__slider', {
     // Optional parameters
     loop: true,
@@ -19,12 +21,12 @@ const abilitiesSlider = () => {
     on: {
       activeIndexChange: function () {
         if (document.documentElement.clientWidth > 767) {
-          if (((this.activeIndex - 11) % 2) === 1) {
+          if (((this.activeIndex - ability.length) % 2) === 1) {
             let paginationBullets = document.querySelectorAll('.swiper-pagination-bullet');
             
             setTimeout(() => {
-              if (this.activeIndex - 11 - 1 !== 10) {
-                paginationBullets[this.activeIndex - 11 - 1].classList.add("swiper-pagination-bullet-active")
+              if (this.activeIndex - ability.length - 1 !== (ability.length - 1)) {
+                paginationBullets[this.activeIndex - ability.length - 1].classList.add("swiper-pagination-bullet-active")
               }
             }, 1)
             
